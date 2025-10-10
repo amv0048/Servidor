@@ -91,5 +91,11 @@
         }
         echo "</pre>";
     }
+<<<<<<< HEAD
     matrizPorSectores(5);
+=======
+    //matrizPorSectores(5);
+
+    
+>>>>>>> cf91e3c (actualizar)
 ?>
