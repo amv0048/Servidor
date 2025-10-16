@@ -14,7 +14,7 @@
         $cadena;
         echo $cadena;
         echo 10/0;
-    
+        
     ?>
 </body>
 </html>
