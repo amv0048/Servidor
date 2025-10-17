@@ -12,7 +12,7 @@
         padding: 10px;
     }
 </style>
-
+ 
 <table>
     <th>Departamento</th>
     <th>1er</th>
