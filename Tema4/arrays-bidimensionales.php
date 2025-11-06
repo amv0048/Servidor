@@ -33,12 +33,22 @@
 
     <?php 
        
-       /* $categoria = array_column($videojuegos, 1);
+        //Nombre, Categoria, Precio
+        $videojuegos = [
+            ["FIFA 26", "Deportes", 90],
+            ["Hollow Knight", "Plataformas", 30],
+            ["Dark Souls III", "Soulslike", 20]
+        ];
+
+       //array_column almacena en una variable una columna de un array
+       $categoria = array_column($videojuegos, 1);
        $precio = array_column($videojuegos, 2);
+       //array_multisort permite ordenar las columnas de forma independiente
        array_multisort(
         $_categoria, SORT_ASC,
         $_precio, SORT_ASC,
-        $videojuegos); */
+        $videojuegos);
+
         /**
          * 1: Ordenar por el precio de barato a caro
          * 2: Ordenar por categoria en orden alfabetico inverso

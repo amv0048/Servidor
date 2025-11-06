@@ -14,7 +14,7 @@
         //Sacar valores
         /* foreach($arrayAsoc as $element){
             //echo $element;
-        } */
+        } 
 
         /* foreach($arrayAsoc as $clave => $element){
             /* echo $clave;

@@ -15,6 +15,8 @@
 
         <input type="submit" value="ENVIAR">
     </form> -->
+
+    <!--Formulario simple HTML -->
     <h3>Ejercicio 1</h3>
     <form action="form-2.php" method="post">
         <label for="name">Word: </label>
