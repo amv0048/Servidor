@@ -7,29 +7,30 @@
 </head>
 <body>
     <form action="" method="POST">
-        <label for="num">Introduce un numero: </label>
-        <input type="number" name="num">
-        <input type="submit" value="Enviar">
+        <?php 
+        if ($_SERVER["REQUEST_METHOD"] == "POST" 
+        && isset($_POST["num"]) && !isset($_POST["arr"])) {
+
+            $numeroInputs = (int)$_POST["num"];
+            for ($i = 0; $i < $numeroInputs; $i++) { 
+                echo "<input type='number' name='arr[]'><br>";
+            }
+            echo "<input type='submit' value='Enviar valores'>";
+        }
+        elseif ($_SERVER["REQUEST_METHOD"] == "POST" 
+        && isset($_POST["arr"])) {
+
+            $lista = $_POST["arr"];
+            print_r($lista);
+        } 
+        else {
+            echo '<label>Introduce un número: </label>';
+            echo '<input type="number" name="num" min="1">';
+            echo '<input type="submit" value="Enviar">';
+        }
+        ?>
     </form>
 
-    <?php 
-        if ($_SERVER["REQUEST_METHOD"] == "POST"){
-            $numeroInputs = $_POST["num"];
-            for ($i=0; $i < $numeroInputs; $i++) { 
-                echo "<input type='number'"." name='arr'>";
-
-            }
-            $lista = [];
-            if ($_POST["arr"]){
-                
-                foreach($_POST["arr"] as $i){
-                    $lista[] = $i;
-                }
-                //print_r($lista);
-            }
-
-            
-        }
-    ?>
+    
 </body>
 </html>
