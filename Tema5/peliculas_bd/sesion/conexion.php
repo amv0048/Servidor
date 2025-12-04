@@ -25,8 +25,8 @@
     if($_conexion->connect_error){
         die("Error en la conexion: ".$_conexion->connect_error);
     }
-    var_dump($_conexion->connect_error);
-    echo "Conexion realizada con exito";
+    //var_dump($_conexion->connect_error);
+    //echo "Conexion realizada con exito";
     /* echo "<br>".$_conexion->host_info;
     echo "<br>".$_conexion->server_info;
     echo "<br>".$_conexion->server_version; */

@@ -56,17 +56,19 @@ while($row = $result->fetch_assoc()){
         echo "</tr>";
         $header = true;
     }
-
-    echo "<tr>";
-    echo "<td>{$row['titulo']}</td>";
-    echo "<td>{$row['nombre_estudio']}</td>";
-    echo "<td>{$row['anno_estreno']}</td>";
-    echo "<td>{$row['num_temporadas']}</td>";
-    echo "</tr>";
+    
+   if ($row['num_temporadas'] != 2){
+       echo "<tr>";
+            echo "<td>{$row['titulo']}</td>";
+            echo "<td>{$row['nombre_estudio']}</td>";
+            echo "<td>{$row['anno_estreno']}</td>"; 
+            echo "<td>{$row['num_temporadas']}</td>";
+       echo "</tr>";
+    }
 }
 
-echo "</table>";
+    echo "</table>";
 
-    ?>
+?>
 </body>
 </html>
