@@ -59,13 +59,23 @@
                          * este activa.
                          */
                         session_start();
-                        $_SESSION["usuario"] = $usuario;
+                        $_SESSION["usuario"] = $user;
                         $_SESSION["admin"] = $info_user["admin"];
+
+                        /**
+                         * Que es header
+                         * 
+                         * Cuando tu navegador pide una pagina,
+                         * el servidor responde con algo asi HTTP/1.1 200 OK
+                         * Content-type: text/html; charset=UTF-8....
+                         * <html></html>
+                         * 
+                         */
+                        header("location: ../index.php");
+                        exit();
                     }
                 }
             }
-            
-
         }
     ?>
     <div class="container mt-5">
