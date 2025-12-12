@@ -17,10 +17,19 @@
             header("location: sesion/login.php");
             echo "<script>alert('donde vas churrita')</script>";
             exit();
-        }
-
+        
     ?>
-    <h1>Has iniciado sesion, <?= $_SESSION["usuario"]?></h1>
+    <h1>Zona Admins, Bienvenid@, <?= $_SESSION["usuario"]?></h1>
+    <a href="nuevaPeli.php">Crear una nueva peli</a>
+    <a href="nuevoEstudio.php">Crear un nuevo estudio</a>
+    
+    <?php 
+        }
+    ?> 
+        <a href="listaPelis.php">Ir a las pelis</a>
+        <a href="listaEstudios.php">Ir a estudios</a>
+    
+
     <a href="sesion/logout.php"></a>
 </body>
 </html>
