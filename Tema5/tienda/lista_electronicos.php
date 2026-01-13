@@ -86,11 +86,12 @@
                     }
                     if($_SESSION["admin"]){
                         echo "<td>";
-                        echo "<a href='editarElectronicos.php' class='btn btn-warning'>Editar</a>";
-                        echo "<form action='' method='POST'>
-                            <input type='hidden' name='id_producto' value='{$fila["id_producto"]}'>
-                            <input type='submit' value='borrar' class='btn btn-danger'>
-                        </form>";
+                            echo "<a href='editarElectronicos.php?id_producto={$fila['id_producto']}' class='btn btn-warning'>Editar</a>";
+
+                            echo "<form action='' method='POST'>
+                                <input type='hidden' name='id_producto' value='{$fila["id_producto"]}'>
+                                <input type='submit' value='borrar' class='btn btn-danger'>
+                            </form>";
                         echo "</td>";
                     }
                     echo "</tr>";
