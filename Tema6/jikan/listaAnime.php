@@ -66,7 +66,7 @@
                 echo "<a href='$actual?page=".($paginaActual+1)."'>Siguiente</a>";
             }         
         ?>
-    </div>
+    </div> 
     <table>
         <thead>
             <tr>

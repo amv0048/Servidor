@@ -10,7 +10,7 @@
     $id = $_GET["patapta"];
     $apiURL = "https://api.jikan.moe/v4/anime/$id/full";
 
-    // Qué es cURL? Es un recurso que mantiene la configuración de la petición URL:
+    // Qué es CURL? Es un recurso que mantiene la configuración de la petición URL:
     // en la configuración de la URL podemos especificar cosas como métodos GET/POST (para los formularios), headers, timeouts, si te devuelve las respuestas como string.. etc
 
     
