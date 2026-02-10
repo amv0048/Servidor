@@ -10,9 +10,6 @@
     <h3>Crea un programa que muestre "Hola {aquí tu nombre}" usando 
         una variable donde recojas tu nombre</h3>
     <?php
-
-use Dom\Notation;
-
         function mostrarNombre($nombre){
             echo "Hola $nombre";
         }

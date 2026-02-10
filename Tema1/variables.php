@@ -7,7 +7,7 @@
     }
     
     mostrarMal($globalMal);
-
+*/
     $globalBien = "Fuera 2";
 
     function mostrarBien(){
@@ -26,7 +26,6 @@
 
     contador();
     contador();
-*/
 
 
 
