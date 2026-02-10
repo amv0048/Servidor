@@ -20,7 +20,7 @@
 
             //Validacion nombre
             $tmp_nombre = trim(htmlspecialchars($tmp_nombre));
-            $tmp_nombre = preg_match("/^(?=.*[A-Z])(?=.*[a-z])(?=.*[&%@!])[A-Za-z\d%&@!]{8,16}$/",$contrasena)
+            $tmp_nombre = preg_match("/^(?=.*[A-Z])(?=.*[a-z])(?=.*[&%@!])[A-Za-z\d%&@!]{8,16}$/",$contrasena);
             if ($tmp_nombre == ' '){
                 $err_nombre = "<div class='alert alert-danger'>Inserta un nombre</div>";
             }
