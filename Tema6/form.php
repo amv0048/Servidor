@@ -18,7 +18,7 @@
 
             $consulta->execute();
 
-            $borrados = $consulta->;
+            
         }
         catch(PDOException $e){
             echo $e->getMessage();
